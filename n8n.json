@@ -1,0 +1,232 @@
+{
+  "workflow_config": {
+    "name": "AI_Business_Instagram_Growth",
+    "version": "1.0",
+    "description": "Automated Instagram posting workflow for AI/Automation business"
+  },
+  "posting_schedule": {
+    "timezone": "UTC",
+    "frequency": {
+      "posts": 1,
+      "stories": 2,
+      "reels": 3
+    },
+    "weekly_schedule": {
+      "monday": {
+        "post_time": "09:00",
+        "content_type": "educational_carousel",
+        "story_times": ["12:00", "18:00"]
+      },
+      "tuesday": {
+        "post_time": "14:00",
+        "content_type": "reel_tutorial",
+        "story_times": ["10:00", "16:00"]
+      },
+      "wednesday": {
+        "post_time": "11:00",
+        "content_type": "case_study",
+        "story_times": ["13:00", "19:00"]
+      },
+      "thursday": {
+        "post_time": "15:00",
+        "content_type": "reel_trending",
+        "story_times": ["09:00", "17:00"]
+      },
+      "friday": {
+        "post_time": "10:00",
+        "content_type": "behind_scenes",
+        "story_times": ["14:00", "20:00"]
+      },
+      "saturday": {
+        "post_time": "12:00",
+        "content_type": "reel_showcase",
+        "story_times": ["11:00", "18:00"]
+      },
+      "sunday": {
+        "post_time": "16:00",
+        "content_type": "weekly_roundup",
+        "story_times": ["10:00", "15:00"]
+      }
+    }
+  },
+  "content_templates": {
+    "educational_carousel": {
+      "openrouter_prompt": "Create a 5-slide Instagram carousel about {topic} for an AI automation business. Include: 1) Hook slide, 2-4) Educational content, 5) Call to action. Make it engaging and professional.",
+      "hashtags": "#AIAutomation #BusinessAutomation #ArtificialIntelligence #TechSolutions #AIAgent #Productivity #DigitalTransformation #Innovation #AutomationTools #AIBusiness",
+      "caption_structure": {
+        "hook": "Did you know that {statistic/question}?",
+        "body": "Here's how AI automation can {benefit}:",
+        "cta": "Save this post for later! What automation would help your business most? Comment below 👇"
+      }
+    },
+    "reel_tutorial": {
+      "openrouter_prompt": "Write a script for a 30-second Instagram Reel showing how to {tutorial_topic}. Include hook in first 3 seconds, clear steps, and strong CTA.",
+      "hashtags": "#AITutorial #AutomationHowTo #AITips #TechTutorial #AIAgent #LearnAI #AutomationTips #DigitalSkills #AIEducation #TechHacks",
+      "caption_structure": {
+        "hook": "Want to automate {process} in under 5 minutes?",
+        "body": "Follow these simple steps:",
+        "cta": "Try this and let me know how it works! DM me for custom automation solutions."
+      }
+    },
+    "case_study": {
+      "openrouter_prompt": "Create an Instagram post showcasing a client success story for AI automation. Include problem, solution, and results. Make it compelling but protect client privacy.",
+      "hashtags": "#ClientSuccess #AIResults #AutomationROI #BusinessGrowth #AIImplementation #CaseStudy #DigitalTransformation #ProductivityGains #AISuccess #BusinessAutomation",
+      "caption_structure": {
+        "hook": "Client Results: {impressive_metric}",
+        "body": "The Challenge:\nThe Solution:\nThe Results:",
+        "cta": "Ready for similar results? Link in bio or DM me 'AUTOMATE'"
+      }
+    },
+    "reel_trending": {
+      "openrouter_prompt": "Adapt the trending audio/format '{trend}' for an AI automation business. Keep it relevant but entertaining.",
+      "hashtags": "#AIHumor #TechTrends #AILife #AutomationMemes #TechEntrepreneur #AIAgent #TechComedy #AIBusiness #AutomationLife #TechVibes",
+      "caption_structure": {
+        "hook": "POV: You just discovered AI automation",
+        "body": "Tag someone who needs to see this!",
+        "cta": "Follow for more AI content that actually makes sense 🤖"
+      }
+    }
+  },
+  "ai_content_generation": {
+    "openrouter_config": {
+      "api_endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "model": "anthropic/claude-3-sonnet",
+      "max_tokens": 500,
+      "temperature": 0.7
+    },
+    "content_topics": [
+      "AI automation basics",
+      "Business process automation",
+      "Custom AI agents",
+      "Workflow optimization",
+      "AI tool comparisons",
+      "Automation ROI",
+      "AI implementation strategies",
+      "Customer service automation",
+      "Sales process automation",
+      "Marketing automation with AI",
+      "Data processing automation",
+      "AI chatbot development"
+    ],
+    "trending_keywords": [
+      "ChatGPT",
+      "AI agents",
+      "automation",
+      "no-code",
+      "productivity",
+      "business efficiency",
+      "digital transformation",
+      "AI tools",
+      "machine learning",
+      "artificial intelligence"
+    ]
+  },
+  "engagement_strategy": {
+    "hashtag_research": {
+      "primary_tags": 10,
+      "secondary_tags": 15,
+      "niche_tags": 5,
+      "branded_tag": "#YourBusinessNameAI"
+    },
+    "posting_optimization": {
+      "best_times": ["09:00", "12:00", "15:00", "18:00"],
+      "engagement_window": 60,
+      "response_time_target": 15
+    },
+    "growth_tactics": {
+      "collaborate_with": [
+        "tech_influencers",
+        "business_coaches",
+        "startup_founders",
+        "ai_researchers",
+        "productivity_experts"
+      ],
+      "engagement_actions": {
+        "like_target_posts": 50,
+        "comment_meaningfully": 10,
+        "story_interactions": 20,
+        "dm_responses": "all_within_1_hour"
+      }
+    }
+  },
+  "content_calendar_automation": {
+    "research_phase": {
+      "frequency": "daily",
+      "sources": [
+        "AI news websites",
+        "competitor analysis",
+        "trending hashtags",
+        "customer questions",
+        "industry reports"
+      ]
+    },
+    "creation_workflow": [
+      {
+        "step": 1,
+        "action": "generate_content_idea",
+        "ai_prompt": "Based on current AI trends and my automation business, suggest 3 Instagram post ideas for {day_of_week}"
+      },
+      {
+        "step": 2,
+        "action": "create_visual_concept",
+        "ai_prompt": "Describe the visual elements needed for this Instagram post: {content_idea}"
+      },
+      {
+        "step": 3,
+        "action": "write_caption",
+        "ai_prompt": "Write an engaging Instagram caption for {content_type} about {topic} for an AI automation business"
+      },
+      {
+        "step": 4,
+        "action": "generate_hashtags",
+        "ai_prompt": "Generate 30 relevant hashtags for this post about {topic}, mix of popular and niche tags"
+      },
+      {
+        "step": 5,
+        "action": "schedule_post",
+        "platform": "instagram_api_or_scheduling_tool"
+      }
+    ]
+  },
+  "analytics_tracking": {
+    "kpis": [
+      "follower_growth_rate",
+      "engagement_rate",
+      "reach",
+      "impressions",
+      "profile_visits",
+      "website_clicks",
+      "dm_inquiries",
+      "lead_generation"
+    ],
+    "reporting_frequency": "weekly",
+    "optimization_triggers": {
+      "low_engagement": "< 3% engagement rate",
+      "low_reach": "< 500 accounts reached",
+      "high_performing_content": "> 5% engagement rate"
+    }
+  },
+  "automation_tools_integration": {
+    "scheduling": "Later, Hootsuite, or Buffer",
+    "analytics": "Instagram Insights + Sprout Social",
+    "content_creation": "Canva API + OpenRouter AI",
+    "hashtag_research": "Hashtagify, RiteTag",
+    "competitor_analysis": "Social Blade, Sprout Social"
+  },
+  "compliance_and_safety": {
+    "posting_limits": {
+      "posts_per_day": 3,
+      "stories_per_day": 10,
+      "likes_per_hour": 60,
+      "comments_per_hour": 15,
+      "follows_per_hour": 20
+    },
+    "content_guidelines": [
+      "Always disclose AI-generated content when required",
+      "Respect copyright and trademark laws",
+      "Follow Instagram community guidelines",
+      "Include proper disclaimers for business advice",
+      "Maintain professional tone and branding"
+    ]
+  }
+}
